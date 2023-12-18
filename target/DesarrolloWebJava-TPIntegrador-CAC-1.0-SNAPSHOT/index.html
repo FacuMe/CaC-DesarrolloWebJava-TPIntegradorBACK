@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./img/codoacodo.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- styles.css -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header class="container-fluid d-flex justify-content-center align-items-center index-header">
+        <div class="overlay"></div>
+        <div class="col-md-5 offset-md-5 header-content">
+            <h1 class="mb-3">Conf Bs As</h1>
+            <p class="mb-3">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+            <div class="mt-4 d-flex justify-content-end gap-3">
+                <a href="#postulacion"><button type="button" class="btn btn-outline-light">Quiero ser orador</button></a>
+                <a href="./pages/compra.html"><button type="button" class="btn btn-success">Comprar tickets</button></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- navbar -->
+    <nav class="navbar sticky-top bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid justify-content-between align-items-center">
+            <div class="col-md-4 offset-md-1">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/codoacodo.png" alt="Logo" width="75" height="50" class="d-inline-block align-text-center">
+                    Conf Bs As
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ps-lg-5" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#oradores">Los oradores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#locacion">El lugar y la fecha</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#postulacion">Conviértete en orador</a>
+                    </li>
+                </ul>
+                <a href="./pages/compra.html"><button class="btn btn-outline-success border-0">Comprar tickets</button></a>
+            </div>
+            <a href="vistas/login.jsp" class="pe-4"><button class="btn btn-outline-success border-0">Login</button></a>
+        </div>
+    </nav>
+
+    <!-- main -->
+    <main>
+        <section id="oradores" class="container-fluid mt-3 mb-5">
+            <div class="row">
+                <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+                    <p class="uppercase small-letter">Conoce a los</p>
+                    <h3 class="uppercase">Oradores</h3>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div id="oradores-container" class="col-12 d-flex flex-wrap justify-content-center align-items-center gap-5">
+                    <div data-aos="fade-up" data-aos-duration="1600">
+                        <div class="card">
+                            <img src="./img/steve.jpg" class="card-img-top img-fluid" alt="Steve Jobs">
+                            <div class="card-body">
+                                <div class="d-flex align-items-end gap-1">
+                                    <p class="card-item bg-yellow">JavaScript</p>
+                                    <p class="card-item bg-green">React</p>
+                                </div>
+                                <h5 class="card-title">Steve Jobs</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores non, veritatis sit repellendus accusamus amet repellat suscipit vel, quaerat qui, natus alias obcaecati esse quam? Eligendi, eaque soluta. Sit, iure.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1600" data-aos-delay="100">
+                        <div class="card">
+                            <img src="./img/bill.jpg" class="card-img-top img-fluid" alt="Bill Gates">
+                            <div class="card-body">
+                                <div class="d-flex align-items-end gap-1">
+                                    <p class="card-item bg-yellow">JavaScript</p>
+                                    <p class="card-item bg-green">React</p>
+                                </div>
+                                <h5 class="card-title">Bill Gates</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores non, veritatis sit repellendus accusamus amet repellat suscipit vel, quaerat qui, natus alias obcaecati esse quam? Eligendi, eaque soluta. Sit, iure.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1600" data-aos-delay="200">
+                        <div class="card">
+                            <img src="./img/ada.jpeg" class="card-img-top img-fluid" alt="Ada Lovelace">
+                            <div class="card-body">
+                                <div class="d-flex align-items-end gap-1">
+                                    <p class="card-item bg-grey">Negocios</p>
+                                    <p class="card-item bg-red">Startups</p>
+                                </div>
+                                <h5 class="card-title">Ada Lovelace</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores non, veritatis sit repellendus accusamus amet repellat suscipit vel, quaerat qui, natus alias obcaecati esse quam? Eligendi, eaque soluta. Sit, iure.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-4">
+                <div class="col d-flex justify-content-center">
+                    <a href="vistas/verOradores.jsp">
+                        <button class="btn btn-success border-0">Ver lista completa de oradores</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="locacion" class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 ps-0 pe-0" data-aos="fade-in" data-aos-duration="1400" data-aos-once="true">
+                    <img src="./img/honolulu.jpg" class="img-fluid locacion-img" alt="Honolulu">
+                </div>
+                <div class="col-md-6 ms-0 location-content p-4 p-sm-3">
+                    <h5 class="location-title" data-aos="fade-in" data-aos-duration="1400" data-aos-once="true">Bs As - Octubre</h5>
+                    <p class="location-description mt-3 mb-3" data-aos="fade-in" data-aos-duration="1400" data-aos-delay="200">Buenos Aires es la provincia y 
+                        localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades 
+                        estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado 
+                        de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad  (aproximadamente 600 km<sup>2</sup> de superficie).</p>
+                    <button type="button" class="btn btn-outline-light" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="300">Conocé más</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="postulacion" class="container-fluid mt-4 mb-4">
+            <div class="row">
+                <div class="col-12 d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="1800" data-aos-once="true">
+                    <p class="uppercase small-letter">Conviértete en un</p>
+                    <h3 class="uppercase">Orador</h3>
+                </div>
+                <div class="col-12 d-flex flex-column justify-content-center align-items-center" data-aos="flip-right" data-aos-duration="1800" data-aos-delay="400" data-aos-once="true">
+                    <div class="col-10 d-flex justify-content-center">
+                        <p>Anótate como orador para dar una charla ignite. ¡Cuéntanos de qué quieres hablar!</p>
+                    </div>
+                    <form class="col-10 col-lg-6 mt-3" action="registroOrador" method="POST">
+                        <div class="row mb-3">
+                            <div class="col">
+                                <input type="text" name="nombre" id="nombre" class="form-control form-control-sm" placeholder="Nombre">
+                            </div>
+                            <div class="col">
+                                <input type="text" name="apellido" id="apellido" class="form-control form-control-sm" placeholder="Apellido">
+                            </div>
+                        </div>
+                        <div class="mb-3 d-flex flex-column gap-2">
+                            <textarea class="form-control" name="tema" id="tema" placeholder="Sobre qué quieres hablar?" rows="4"></textarea>
+                            <p class="textarea-description">Recuerda incluir un título para tu charla</p>
+                        </div>
+                        <button type="submit" class="btn btn-secondary w-100 submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="container-fluid">
+        <div class="row">
+            <ul class="col-12 d-flex flex-column flex-md-row flex-wrap justify-content-center align-items-center gap-2 gap-md-5">
+                <li class="col-md-1"><a href="#">Preguntas frecuentes</a></li>
+                <li class="col-md-1"><a href="#">Contáctanos</a></li>
+                <li class="col-md-1"><a href="#">Prensa</a></li>
+                <li class="col-md-1"><a href="#">Conferencias</a></li>
+                <li class="col-md-1"><a href="#">Términos y condiciones</a></li>
+                <li class="col-md-1"><a href="#">Privacidad</a></li>
+                <li class="col-md-1"><a href="#">Estudiantes</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./main.js"></script>
+</body>
+</html>

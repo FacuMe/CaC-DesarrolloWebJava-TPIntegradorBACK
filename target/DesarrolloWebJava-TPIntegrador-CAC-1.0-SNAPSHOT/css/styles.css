@@ -1,0 +1,264 @@
+/* .................................
+
+          ESTILOS GLOBALES
+
+   .................................
+*/
+
+/*RESET ESTILOS HTML, BOOTSTRAP*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+hr {
+  opacity: 1;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* GRID */
+body {
+  display: grid;
+  grid-template-areas: "nav" "header" "main" "footer";
+  grid-template-rows: repeat(4, auto);
+  grid-template-columns: auto;
+}
+body nav {
+  grid-area: nav;
+}
+body header {
+  grid-area: header;
+}
+body main {
+  grid-area: main;
+}
+body footer {
+  grid-area: footer;
+}
+
+
+/* HEADER */
+
+.index-header {
+  position: relative;
+  height: 92vh;
+  background-image: url("../img/hawaii.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  text-align: end;
+  animation: kenburns-bottom-right 3s ease-out both;
+}
+
+@keyframes kenburns-bottom-right {
+  0% {
+    transform: scale(1);
+    transform-origin: right bottom;
+  }
+  100% {
+    transform: scale(1.05);
+    transform-origin: right bottom;
+  }
+}
+
+.overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-content {
+  z-index: 1;
+  animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+
+/* SECCION ORADORES */
+
+.card {
+  width: 15rem;
+  height: 28rem;
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+
+.card:hover{
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  transform: scale(1.005);
+}
+
+.card-img-top {
+  height: 15rem;
+}
+
+.card-item {
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+
+.bg-yellow {
+  background-color: #ffcb1f;
+}
+
+.bg-green {
+  background-color: #21b09b;
+  color:white;
+}
+
+.bg-grey {
+  background-color: #727272;
+  color:white;
+}
+
+.bg-red {
+  background-color: #d52828;
+  color:white;
+}
+
+.card-text {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 960px) {
+  .card {
+    width: 20rem;
+    height: 31rem;
+  }
+
+  .card-img-top {
+    height: 19.5rem;
+  }
+}
+
+/* SECCION LOCACION */
+
+.locacion-img {
+  transition: all .3s ease-in-out
+}
+
+.locacion-img:hover {
+  transform: scale(1.01);
+}
+
+.location-content {
+  color: white;
+  background-color: #363c41;
+  border-left: 2px solid white;
+}
+
+.location-description {
+  font-size: 12px;
+  line-height: 25px;
+}
+
+/* SECCION POSTULACION */
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.small-letter {
+  font-size: 12px;
+}
+
+.submit {
+  background-color: #8fd211;
+  border-color: #8fd211;
+}
+
+.submit:hover {
+  background-color: #6da10d;
+  border-color: #6da10d;
+}
+
+.textarea-description {
+  font-size: 12px;
+}
+
+/* SECCION COMPRA */
+.border-blue {
+  border: 1px solid blue;
+}
+
+.border-green {
+  border: 1px solid rgb(31, 175, 156);
+}
+
+.border-yellow {
+  border: 1px solid rgb(230, 211, 7);
+}
+
+.blue-box {
+  border: 0.5px solid #8cabd0;
+  background-color: #c2dbf5;
+  border-radius: 5px;
+  color: #184473;
+}
+
+.resume, .reset {
+  background-color: #8fd211;
+  border-color: #8fd211;
+}
+
+.resume:hover, .reset:hover {
+  background-color: #6da10d;
+  border-color: #6da10d;
+}
+
+@media screen and (min-width: 992px) {
+  .ticket-cards {
+    justify-content: space-between !important;
+  }
+}
+
+/* FOOTER */
+
+footer {
+  background: linear-gradient(to right, #1f353e, #30627b);
+  color: white;
+  padding: 2rem;
+}
+
+footer li {
+  list-style: none;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #328f52;
+}
+

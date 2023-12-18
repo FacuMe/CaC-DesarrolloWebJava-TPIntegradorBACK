@@ -1,0 +1,4 @@
+modelo\Orador.class
+util\ConexionDB.class
+controlador\RegistroOrador.class
+dao\OradoresDAO.class
